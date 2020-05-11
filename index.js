@@ -3,6 +3,7 @@ const client = new StreamlabsClient()
 
 module.exports = {
   namespace: 'streamlabs',
+  apiVersion: 1,
   actions: [
     {
       id: 'scene',
