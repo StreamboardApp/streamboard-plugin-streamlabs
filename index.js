@@ -8,6 +8,10 @@ module.exports = {
     {
       id: 'scene',
       label: 'Scene',
+      defaultIcons: {
+        inactive: 'far image',
+        active: 'far image'
+      },
       async getConfigSchema () {
         const scenes = await client.getScenes()
         return [
@@ -31,6 +35,10 @@ module.exports = {
     {
       id: 'mutesource',
       label: 'Mute Source',
+      defaultIcons: {
+        inactive: 'fas microphone-slash',
+        active: 'fas microphone'
+      },
       async getConfigSchema () {
         const sources = await client.getSources()
         return [
